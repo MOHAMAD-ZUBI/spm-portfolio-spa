@@ -7,6 +7,7 @@ import {
   HiOutlinePhone,
 } from "react-icons/hi";
 import { TbSend } from "react-icons/tb";
+import { toast, ToastContainer } from "react-toastify";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -42,7 +43,8 @@ const ContactForm = () => {
       .then(
         (response) => {
           console.log("Success:", response);
-          alert("Message sent successfully!");
+          //   alert("Message sent successfully!");
+          toast.success("Message sent successfully!");
         },
         (error) => {
           console.log("Error:", error);
@@ -53,6 +55,18 @@ const ContactForm = () => {
 
   return (
     <div className=" max-w-[1200px] rounded-2xl bg-white border-4 border-dashed  border-blue-700/45 text-black p-8 w-full mx-auto ">
+      <ToastContainer
+        position="bottom-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       <div className=" flex flex-row justify-between max-md:flex-col gap-2 ">
         <div className=" w-full space-y-12">
           <div className=" flex flex-col gap-4">
