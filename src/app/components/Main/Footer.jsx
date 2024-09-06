@@ -48,27 +48,46 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Social Media Links */}
+          {/* Contact Information */}
           <div className="w-full sm:w-1/4">
-            <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
-            <div className="flex space-x-4">
-              <a
-                href="https://www.facebook.com/share/NKYTkvX9QmUVzhN9/?mibextid=LQQJ4d"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-100 hover:text-white"
-              >
-                <FaFacebookF size={20} />
-              </a>
+            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+            <ul className="space-y-2">
+              <li className="text-gray-100">
+                <a href="tel:+4917684234070" className="hover:text-white">
+                  +49 176 84234070
+                </a>
+              </li>
+              <li className="text-gray-100">
+                <a
+                  href="mailto:sauberpromax@gmail.com"
+                  className="hover:text-white"
+                >
+                  Sauberpromax@gmail.com
+                </a>
+              </li>
+            </ul>
+            {/* Social Media Links */}
+            <div className="w-full sm:w-1/4 mt-4">
+              <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
+              <div className="flex space-x-4">
+                <a
+                  href="https://www.facebook.com/share/NKYTkvX9QmUVzhN9/?mibextid=LQQJ4d"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-100 hover:text-white"
+                >
+                  <FaFacebookF size={20} />
+                </a>
 
-              <a
-                href="https://www.instagram.com/sauber_pro_max"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-100 hover:text-white"
-              >
-                <FaInstagram size={20} />
-              </a>
+                <a
+                  href="https://www.instagram.com/sauber_pro_max"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-100 hover:text-white"
+                >
+                  <FaInstagram size={20} />
+                </a>
+              </div>
             </div>
           </div>
         </div>

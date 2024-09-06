@@ -2,6 +2,7 @@ import Image from "next/image";
 import HeroSection from "./components/Main/Hero";
 import Features from "./components/Main/Features";
 import Services from "./components/Main/Services";
+import ContactForm from "./components/Main/Contact";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <HeroSection />
       <Features />
       <Services />
+      <ContactForm />
     </div>
   );
 }
