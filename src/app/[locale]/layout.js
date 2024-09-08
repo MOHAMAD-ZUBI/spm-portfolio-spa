@@ -41,7 +41,7 @@ export default async function RootLayout({ children, params }) {
   }
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className=" scroll-smooth">
       <body className={` ${inter.className} overflow-x-hidden`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <NextUIProvider>

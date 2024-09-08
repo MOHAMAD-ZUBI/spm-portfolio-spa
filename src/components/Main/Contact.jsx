@@ -80,11 +80,24 @@ const ContactForm = () => {
           <div className=" flex flex-col gap-6">
             <div>
               <HiOutlineMail className="inline-block w-6 h-6" />
-              <span className="inline-block mx-2">Sauberpromax@gmail.com</span>
+              <a
+                href="mailto:Sauberpromax@gmail.com"
+                className="inline-block mx-2 hover:text-blue-500"
+              >
+                Sauberpromax@gmail.com
+              </a>
             </div>
             <div>
-              <HiOutlinePhone className="inline-block w-6 h-6" />
-              <span className="inline-block mx-2">+49 176 84234070</span>
+              <HiOutlinePhone className="inline-block w-6 h-6 mr-1" />
+              <a href="tel:+4917684234070" className="hover:text-blue-500">
+                +49 176 84234070
+              </a>
+            </div>
+            <div>
+              <HiOutlinePhone className="inline-block w-6 h-6 mr-1" />
+              <a href="tel:+4915771922675" className="hover:text-blue-500">
+                +49 157 71922675
+              </a>
             </div>
             <div>
               <HiOutlineLocationMarker className="inline-block w-6 h-6" />

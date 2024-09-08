@@ -21,7 +21,7 @@ const Footer = () => {
               width={0}
               height={0}
               sizes="100vw"
-              src="/logo-white.png"
+              src="/white-logo.png"
               alt="Company Logo"
               className="mb-4 w-52"
             />
@@ -52,6 +52,11 @@ const Footer = () => {
               <li className="text-gray-100">
                 <a href="tel:+4917684234070" className="hover:text-white">
                   +49 176 84234070
+                </a>
+              </li>
+              <li className="text-gray-100">
+                <a href="tel:+4915771922675" className="hover:text-white">
+                  +49 157 71922675
                 </a>
               </li>
               <li className="text-gray-100">

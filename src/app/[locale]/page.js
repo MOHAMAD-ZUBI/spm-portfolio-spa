@@ -9,7 +9,7 @@ export default function Home({ params }) {
   return (
     <div className=" min-h-screen bg-gray-100 space-y-32 pb-16">
       <HeroSection />
-      <Features />
+      <Features locale={locale} />
       <Services locale={locale} />
       <ContactForm />
     </div>

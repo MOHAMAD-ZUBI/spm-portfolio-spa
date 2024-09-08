@@ -19,7 +19,7 @@ const Header = () => {
       <div className="flex justify-between items-center w-full h-full px-6 lg:px-12 mx-auto">
         {/* Logo */}
         <div className="h-full">
-          <Image src="/logo.png" width={100} height={100} alt="Logo" />
+          <Image src="/blue-logo.png" width={100} height={100} alt="Logo" />
         </div>
 
         {/* Desktop Navigation */}
