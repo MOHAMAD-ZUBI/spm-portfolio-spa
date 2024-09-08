@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { CiCalendarDate } from "react-icons/ci";
 
-const ServiceCard = ({ title, image, desc }) => {
+const ServiceCard = ({ title, image, desc, locale }) => {
   return (
     <div className="max-w-[300px] w-full h-[450px] bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
       <div className="relative w-full h-[200px]">
@@ -19,7 +19,8 @@ const ServiceCard = ({ title, image, desc }) => {
           type="button"
           className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-[#12418A] text-white hover:bg-[#1b335e] focus:outline-none focus:bg-gray-700 disabled:opacity-50 disabled:pointer-events-none"
         >
-          Book Now <CiCalendarDate size={24} />
+          {locale === "de" ? "Jetzt buchen" : "Book Now"}{" "}
+          <CiCalendarDate size={24} />
         </Link>
       </div>
     </div>

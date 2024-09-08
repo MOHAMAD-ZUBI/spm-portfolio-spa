@@ -9,7 +9,10 @@ import {
 import { TbSend } from "react-icons/tb";
 import { toast, ToastContainer } from "react-toastify";
 
+import { useTranslations } from "next-intl";
+
 const ContactForm = () => {
+  const t = useTranslations("Contact");
   const [formData, setFormData] = useState({
     name: "",
     subject: "",
@@ -70,7 +73,7 @@ const ContactForm = () => {
       <div className=" flex flex-row justify-between max-md:flex-col gap-2 ">
         <div className=" w-full space-y-12">
           <div className=" flex flex-col gap-4">
-            <h1 className=" text-5xl font-bold ">Get in Touch</h1>
+            <h1 className=" text-5xl font-bold ">{t("title")}</h1>
             <p> </p>
           </div>
 
@@ -85,7 +88,7 @@ const ContactForm = () => {
             </div>
             <div>
               <HiOutlineLocationMarker className="inline-block w-6 h-6" />
-              <span className="inline-block mx-2">Frankfurt, germany</span>
+              <span className="inline-block mx-2">Kulmbach, germany</span>
             </div>
           </div>
         </div>
@@ -96,13 +99,13 @@ const ContactForm = () => {
           <div className="flex flex-col space-y-4">
             <div className="flex flex-col">
               <label htmlFor="name" className="text-gray-700 font-medium mb-1">
-                Your Name
+                {t("name")}
               </label>
               <input
                 type="text"
                 id="name"
                 name="name"
-                placeholder="Your Name"
+                placeholder={t("name")}
                 value={formData.name}
                 onChange={handleChange}
                 required
@@ -114,13 +117,13 @@ const ContactForm = () => {
                 htmlFor="subject"
                 className="text-gray-700 font-medium mb-1"
               >
-                Subject
+                {t("subject")}
               </label>
               <input
                 type="text"
                 id="subject"
                 name="subject"
-                placeholder="Subject"
+                placeholder={t("subject")}
                 value={formData.subject}
                 onChange={handleChange}
                 required
@@ -132,12 +135,12 @@ const ContactForm = () => {
                 htmlFor="message"
                 className="text-gray-700 font-medium mb-1"
               >
-                Your Message
+                {t("message")}
               </label>
               <textarea
                 id="message"
                 name="message"
-                placeholder="Your Message"
+                placeholder={t("message")}
                 value={formData.message}
                 onChange={handleChange}
                 required
@@ -149,13 +152,13 @@ const ContactForm = () => {
                 htmlFor="contact"
                 className="text-gray-700 font-medium mb-1"
               >
-                Email or Phone Number
+                {t("method")}
               </label>
               <input
                 type="text"
                 id="contact"
                 name="contact"
-                placeholder="Email or Phone Number"
+                placeholder={t("method")}
                 value={formData.contact}
                 onChange={handleChange}
                 required
@@ -166,7 +169,7 @@ const ContactForm = () => {
               type="submit"
               className="py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
-              Send Message{" "}
+              {t("send")}
               <TbSend className="inline-block w-6 h-6 text-white" />
             </button>
           </div>

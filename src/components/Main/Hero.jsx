@@ -1,8 +1,10 @@
 "use client";
+import { useTranslations } from "next-intl";
 import React from "react";
 import Slider from "react-slick";
 
 const HeroSection = () => {
+  const t = useTranslations("Hero");
   // Slider settings
   const settings = {
     dots: false, // Set to true if you want pagination dots
@@ -41,16 +43,8 @@ const HeroSection = () => {
 
       {/* Centered Text */}
       <div className="absolute inset-0 flex flex-col items-center justify-center z-20 text-center text-white">
-        <h1 className="text-5xl font-bold mb-4">
-          Experience Spotless Cleaning
-        </h1>
-        <p className="text-lg text-wrap max-w-[900px] w-full">
-          Sauber Pro Max is a cleaning company that cares about the smallest
-          details. We are not the only ones, but we are the best. We clean
-          hotels, homes, offices, buildings, apartments, warehouses, basements,
-          and many other services. We look forward to providing you with the
-          best service.
-        </p>
+        <h1 className="text-5xl font-bold mb-4">{t("title")}</h1>
+        <p className="text-lg text-wrap max-w-[900px] w-full">{t("desc")}</p>
       </div>
     </div>
   );

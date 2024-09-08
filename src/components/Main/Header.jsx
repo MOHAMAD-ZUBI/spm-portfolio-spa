@@ -4,8 +4,10 @@ import Link from "next/link";
 import React, { useState } from "react";
 import LanguageSelector from "./reusable/LangSelector";
 import { FaBars, FaTimes } from "react-icons/fa"; // For the hamburger and close icons
+import { useTranslations } from "next-intl";
 
 const Header = () => {
+  const t = useTranslations("Menu");
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const toggleSidebar = () => {
@@ -23,13 +25,13 @@ const Header = () => {
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex flex-row gap-6 text-xl font-semibold">
           <Link href="/" className="hover:text-blue-500 cursor-pointer">
-            Home
+            {t("home")}
           </Link>
           <Link href="#services" className="hover:text-blue-500 cursor-pointer">
-            Services
+            {t("services")}
           </Link>
           <Link href="#contact" className="hover:text-blue-500 cursor-pointer">
-            Contact
+            {t("contact")}
           </Link>
           <LanguageSelector />
         </nav>
@@ -61,21 +63,21 @@ const Header = () => {
               className="hover:text-blue-500 cursor-pointer"
               onClick={toggleSidebar}
             >
-              Home
+              {t("home")}
             </Link>
             <Link
               href="#services"
               className="hover:text-blue-500 cursor-pointer"
               onClick={toggleSidebar}
             >
-              Services
+              {t("services")}
             </Link>
             <Link
               href="#contact"
               className="hover:text-blue-500 cursor-pointer"
               onClick={toggleSidebar}
             >
-              Contact
+              {t("contact")}
             </Link>
             <LanguageSelector />
           </nav>

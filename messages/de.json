@@ -1,28 +1,31 @@
 {
-  "Index": {
-    "title": "مرحبا بك في صفحة البداية",
-    "button": "المزيد"
+  "Hero": {
+    "title": "Erleben Sie makellose Reinigung",
+    "desc": "Sauber Pro Max ist ein Reinigungsunternehmen, das auf die kleinsten Details achtet. Wir sind nicht die Einzigen, aber wir sind die Besten. Wir reinigen Hotels, Häuser, Büros, Gebäude, Wohnungen, Lagerhallen, Keller und bieten viele weitere Dienstleistungen an. Wir freuen uns darauf, Ihnen den besten Service zu bieten."
   },
   "Menu": {
-    "projects": "مشاريعنا",
-    "services": "خدماتنا",
-    "contact": "اتصل بنا"
+    "home": "Startseite",
+    "services": "Dienstleistungen",
+    "contact": "Kontakt"
   },
   "Services": {
-    "title": "خدماتنا",
-    "description": "تقدم أنظمة البناء معظم خدمات البناء والانشاءات المعمارية الحديثة بدءاً من التصميم وحتى التنفيذ مروراً بأعمال الحفر والانشاء والتشطيب وغيرها من متطلبات العمل كشركة مقاولات تسعى للنجاح في هذا المجال"
+    "title": "Unsere Dienstleistungen"
   },
-  "Projects": {
-    "title": "أحدث مشاريعنا",
-    "description": "تعتبر أنظمة البناء من الشركات الرائدة في مجال البناء والانشاءات المعمارية والتي تقدم خدماتها للعملاء من خلال مشاريعها الناجحة التي تمتاز بالجودة والدقة في التنفيذ"
-  },
-  "About": {
-    "title": "من نحن",
-    "ourMission": "رسالتنا",
-    "ourVision": "رؤيتنا"
+  "Contact": {
+    "title": "Kontakt aufnehmen",
+    "name": "Ihr Name",
+    "subject": "Betreff",
+    "message": "Ihre Nachricht",
+    "method": "E-Mail oder Telefonnummer",
+    "send": "Nachricht senden"
   },
   "Footer": {
-    "pages": "الصفحات",
-    "contact": "روابط التواصل"
+    "sections": "Abschnitte",
+    "contact": "Kontaktieren Sie uns",
+    "services": "Dienstleistungen",
+    "contactInfo": "Kontakt",
+    "follow": "Folgen Sie uns",
+    "copyRight": "© 2024 Sauber Pro Max. Alle Rechte vorbehalten.",
+    "description": "Sauber Pro Max ist ein Reinigungsunternehmen, das auf die kleinsten Details achtet. Wir sind nicht die Einzigen, aber wir sind die Besten. Wir reinigen Hotels, Häuser, Büros, Gebäude, Wohnungen, Lagerhallen, Keller und bieten viele weitere Dienstleistungen an. Wir freuen uns darauf, Ihnen den besten Service zu bieten."
   }
 }
