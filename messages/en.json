@@ -1,0 +1,29 @@
+{
+  "Index": {
+    "title": "Welcome to the index page",
+    "button": "Learn More"
+  },
+  "Menu": {
+    "projects": "Projects",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "Services": {
+    "title": "Our Services",
+    "description": "Construction systems offer most modern construction and architectural services, starting from design to execution, including excavation, construction, finishing, and other work requirements as a contracting company aiming for success in this field."
+  },
+  "Projects": {
+    "title": "Recent Projects",
+    "description": "Construction systems are one of the leading companies in the field of construction and architectural construction, which provides its services to customers through its successful projects that are characterized by quality and accuracy in implementation."
+  },
+
+  "About": {
+    "title": "About Us",
+    "ourMission": "Our Mission",
+    "ourVision": "Our Vision"
+  },
+  "Footer": {
+    "pages": "pages",
+    "contact": "contact"
+  }
+}
