@@ -74,7 +74,7 @@ const Features = ({ locale }) => {
   let featuresX = locale === "en" ? features : featuresDe;
   return (
     <div className=" max-w-[1600px] mx-auto w-full ">
-      <div className=" w-full flex flex-row max-md:flex-col justify-center items-center max-md:gap-16 gap-32">
+      <div className=" w-full flex flex-col md:flex-row justify-center items-center max-md:gap-16 gap-32">
         {featuresX.map((feature) => {
           return (
             <FeatureCard

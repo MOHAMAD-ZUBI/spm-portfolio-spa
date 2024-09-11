@@ -70,7 +70,7 @@ const ContactForm = () => {
         pauseOnHover
         theme="light"
       />
-      <div className=" flex flex-row justify-between max-md:flex-col gap-2 ">
+      <div className=" flex md:flex-row justify-between flex-col gap-2 ">
         <div className=" w-full space-y-12">
           <div className=" flex flex-col gap-4">
             <h1 className=" text-5xl font-bold ">{t("title")}</h1>
